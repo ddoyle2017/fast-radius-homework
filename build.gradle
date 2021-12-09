@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+// UTF-8 should be standard by now. So use it!
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+group 'com.fastradius'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+project.ext {
+    DROPWIZARD_VERSION = '2.0.11'
+    CONFIG_PATH = "$rootProject.projectDir/"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'io.dropwizard:dropwizard-bom:' + DROPWIZARD_VERSION
+    compile 'io.dropwizard:dropwizard-core:' + DROPWIZARD_VERSION
+    compile "org.projectlombok:lombok:1.18.20"
+    testCompile "org.junit.jupiter:junit-jupiter:5.7.0"
+    testCompile "org.mockito:mockito-core:2.21.0"
+    testCompile "org.mockito:mockito-junit-jupiter:2.23.0"
+}
+
+mainClassName = "com.fastradius.homework.StereolithographyApplication"
+
+run {
+    args 'server', CONFIG_PATH + 'config.yml'
+}
