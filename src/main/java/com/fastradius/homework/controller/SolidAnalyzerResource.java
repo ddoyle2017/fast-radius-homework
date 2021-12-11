@@ -16,12 +16,12 @@ import static com.fastradius.homework.constant.RestConstants.STL_API_PATH;
 
 @Path(STL_API_PATH)
 @Produces(MediaType.APPLICATION_JSON)
-public class StereolithographyController {
+public class SolidAnalyzerResource {
 
     private final ShapeAnalysisService shapeAnalysisService;
 
     @Inject
-    public StereolithographyController(@NonNull final ShapeAnalysisService shapeAnalysisService) {
+    public SolidAnalyzerResource(@NonNull final ShapeAnalysisService shapeAnalysisService) {
         this.shapeAnalysisService = shapeAnalysisService;
     }
 

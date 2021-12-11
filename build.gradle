@@ -37,3 +37,6 @@ mainClassName = "com.fastradius.homework.StereolithographyApplication"
 run {
     args 'server', CONFIG_PATH + 'config.yml'
 }
+test {
+    useJUnitPlatform()
+}

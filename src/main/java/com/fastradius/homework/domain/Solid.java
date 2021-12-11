@@ -5,7 +5,8 @@ import java.util.List;
 public class Solid {
     private List<Facet> facets;
 
-    public Solid() {
+    public Solid(List<Facet> facets) {
+        this.facets = facets;
     }
 
     public List<Facet> getFacets() {
