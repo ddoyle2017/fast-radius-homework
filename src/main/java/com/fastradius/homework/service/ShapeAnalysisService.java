@@ -1,7 +1,7 @@
 package com.fastradius.homework.service;
 
-public interface ShapeAnalysisService {
+import com.fastradius.homework.domain.ShapeRepresentation;
 
-    Long calculateSurfaceArea();
-    Long countNumberOfTriangles();
+public interface ShapeAnalysisService {
+    ShapeRepresentation getSurfaceAreaAndTriangles(String filename);
 }

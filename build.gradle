@@ -24,6 +24,9 @@ dependencies {
     compile 'io.dropwizard:dropwizard-bom:' + DROPWIZARD_VERSION
     compile 'io.dropwizard:dropwizard-core:' + DROPWIZARD_VERSION
     compile "org.projectlombok:lombok:1.18.20"
+
+    implementation 'javax.vecmath:vecmath:1.5.2'
+
     testCompile "org.junit.jupiter:junit-jupiter:5.7.0"
     testCompile "org.mockito:mockito-core:2.21.0"
     testCompile "org.mockito:mockito-junit-jupiter:2.23.0"
