@@ -23,7 +23,9 @@ repositories {
 dependencies {
     compile 'io.dropwizard:dropwizard-bom:' + DROPWIZARD_VERSION
     compile 'io.dropwizard:dropwizard-core:' + DROPWIZARD_VERSION
+
     compile "org.projectlombok:lombok:1.18.20"
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
 
     implementation 'javax.vecmath:vecmath:1.5.2'
 

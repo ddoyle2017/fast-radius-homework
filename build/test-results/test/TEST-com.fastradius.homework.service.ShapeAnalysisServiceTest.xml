@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.fastradius.homework.service.ShapeAnalysisServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-12-11T21:35:44" hostname="MacBook-Pro.local" time="0.48">
+<testsuite name="com.fastradius.homework.service.ShapeAnalysisServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-12-12T23:25:57" hostname="MacBook-Pro.local" time="0.473">
   <properties/>
-  <testcase name="getSurfaceAreaAndTriangles_GivenNullFilename_ThrowsException()" classname="com.fastradius.homework.service.ShapeAnalysisServiceTest" time="0.427"/>
-  <testcase name="getSurfaceAreaAndTriangles_GivenValidFilename_ReturnsTotalSurfaceAreaAndNumberOfTriangles()" classname="com.fastradius.homework.service.ShapeAnalysisServiceTest" time="0.047"/>
-  <testcase name="ShapeAnalysisService_GivenNullDependencies_ThrowsException()" classname="com.fastradius.homework.service.ShapeAnalysisServiceTest" time="0.002"/>
+  <testcase name="getSurfaceAreaAndTriangles_GivenNullFilename_ThrowsException()" classname="com.fastradius.homework.service.ShapeAnalysisServiceTest" time="0.452"/>
+  <testcase name="getSurfaceAreaAndTriangles_GivenValidFilename_ReturnsTotalSurfaceAreaAndNumberOfTriangles()" classname="com.fastradius.homework.service.ShapeAnalysisServiceTest" time="0.02"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

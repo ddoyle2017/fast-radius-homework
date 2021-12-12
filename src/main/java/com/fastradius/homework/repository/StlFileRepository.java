@@ -2,7 +2,9 @@ package com.fastradius.homework.repository;
 
 import com.fastradius.homework.domain.Solid;
 
+import java.util.Optional;
+
 public interface StlFileRepository {
 
-    Solid parseStlFile(String fileName);
+    Optional<Solid> parseStlFile(String fileName);
 }
