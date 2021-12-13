@@ -8,12 +8,13 @@ import javax.vecmath.Point3d;
  * Represents a single facet from an STL file. Each facet has 3 vertices which define a triangle of the solid.
  */
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 public class Facet {
-    private final Point3d normal;
-    private final Point3d a;
-    private final Point3d b;
-    private final Point3d c;
+    private Point3d normal;
+    private Point3d a;
+    private Point3d b;
+    private Point3d c;
 
     /**
      * Calculates the surface area of this facet triangle, using the vertices it was initialized with

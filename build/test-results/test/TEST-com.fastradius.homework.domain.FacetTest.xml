@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.fastradius.homework.domain.FacetTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-12T23:25:58" hostname="MacBook-Pro.local" time="0.001">
-  <properties/>
-  <testcase name="getSurfaceArea_Calculates3dSurfaceAreaCorrectly()" classname="com.fastradius.homework.domain.FacetTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
