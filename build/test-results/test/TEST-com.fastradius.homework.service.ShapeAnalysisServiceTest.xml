@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.fastradius.homework.service.ShapeAnalysisServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-12-13T04:08:21" hostname="MacBook-Pro.local" time="0.093">
-  <properties/>
-  <testcase name="getSurfaceAreaAndTriangles_GivenNullFilename_ThrowsException()" classname="com.fastradius.homework.service.ShapeAnalysisServiceTest" time="0.018"/>
-  <testcase name="getSurfaceAreaAndTriangles_GivenValidFileName_WhenSolidIsNotReturnedByRepository_ThrowNotFoundException()" classname="com.fastradius.homework.service.ShapeAnalysisServiceTest" time="0.068"/>
-  <testcase name="getSurfaceAreaAndTriangles_GivenValidFilename_ReturnsTotalSurfaceAreaAndNumberOfTriangles()" classname="com.fastradius.homework.service.ShapeAnalysisServiceTest" time="0.005"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

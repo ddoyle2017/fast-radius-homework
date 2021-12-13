@@ -9,9 +9,11 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import static com.fastradius.homework.constant.RestConstants.FILENAME_QUERY_PARAM;
-import static com.fastradius.homework.constant.RestConstants.STL_API_PATH;
+import static com.fastradius.homework.constant.RestConstants.*;
 
+/**
+ * Represents all endpoints for the Stereolithography API
+ */
 @Path(STL_API_PATH)
 @Produces(MediaType.APPLICATION_JSON)
 public class SolidAnalyzerResource {
@@ -23,9 +25,15 @@ public class SolidAnalyzerResource {
         this.shapeAnalysisService = shapeAnalysisService;
     }
 
+    /**
+     * An endpoint for getting the shape representation for the given filename, as defined by an STL file. This
+     * endpoint will return the number of triangles and the total surface area
+     * @param filename The name of an STL file
+     * @return A JSON response with the surface area and number of triangles
+     */
     @GET
-    @Path("/get-surface-area")
-    public Object getSurfaceAreaOfShape(@QueryParam(FILENAME_QUERY_PARAM) final String filename) {
+    @Path(SHAPE_REPRESENTATION_ENDPOINT)
+    public Response getShapeRepresentation(@QueryParam(FILENAME_QUERY_PARAM) final String filename) {
         if (filename == null || filename.isEmpty()) {
             throw new BadRequestException("Filename must not be null or empty");
         }

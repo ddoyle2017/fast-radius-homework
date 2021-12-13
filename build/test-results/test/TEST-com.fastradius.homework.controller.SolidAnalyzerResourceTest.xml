@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fastradius.homework.controller.SolidAnalyzerResourceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-12-13T17:47:57" hostname="MacBook-Pro.local" time="0.793">
+  <properties/>
+  <testcase name="getShapeRepresentation_GivenValidFilename_ReturnsResponseWithShapePresentation()" classname="com.fastradius.homework.controller.SolidAnalyzerResourceTest" time="0.786"/>
+  <testcase name="getShapeRepresentation_GivenEmptyFilename_ThrowsBadRequestException()" classname="com.fastradius.homework.controller.SolidAnalyzerResourceTest" time="0.003"/>
+  <testcase name="getShapeRepresentation_GivenNullFilename_ThrowsBadRequestException()" classname="com.fastradius.homework.controller.SolidAnalyzerResourceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
