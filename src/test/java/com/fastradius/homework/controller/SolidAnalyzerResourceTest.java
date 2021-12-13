@@ -1,8 +1,8 @@
-package com.fastradius.homework.repository;
+package com.fastradius.homework.controller;
 
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
-public class StlFileRepositoryTest {
+public class SolidAnalyzerResourceTest {
 }

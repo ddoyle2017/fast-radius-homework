@@ -4,6 +4,7 @@ import com.fastradius.homework.domain.Facet;
 import com.fastradius.homework.domain.ShapeRepresentation;
 import com.fastradius.homework.domain.Solid;
 import com.fastradius.homework.repository.StlFileRepository;
+import javax.ws.rs.NotFoundException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -29,6 +30,12 @@ class ShapeAnalysisServiceTest {
     @Test
     void getSurfaceAreaAndTriangles_GivenNullFilename_ThrowsException() {
         assertThrows(RuntimeException.class, () -> underTest.getSurfaceAreaAndTriangles(null));
+    }
+
+    @Test
+    void getSurfaceAreaAndTriangles_GivenValidFileName_WhenSolidIsNotReturnedByRepository_ThrowNotFoundException() {
+        when(stlFileRepository.parseStlFile(anyString())).thenReturn(Optional.empty());
+        assertThrows(NotFoundException.class, () -> underTest.getSurfaceAreaAndTriangles("Moon"));
     }
 
     @Test

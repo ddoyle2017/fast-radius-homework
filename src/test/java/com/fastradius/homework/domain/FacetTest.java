@@ -7,11 +7,17 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import javax.vecmath.Point3d;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @ExtendWith(MockitoExtension.class)
 class FacetTest {
 
     private static final Double FLOATING_POINT_DELTA = 0.1;
+
+    @Test
+    void getSurfaceArea_WhenAnyVerticesAreNull_ThrowIllegalArgumentException() {
+        assertThrows(IllegalArgumentException.class, () -> new Facet().getSurfaceArea());
+    }
 
     @Test
     void getSurfaceArea_Calculates3dSurfaceAreaCorrectly() {
